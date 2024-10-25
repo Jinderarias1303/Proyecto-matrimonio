@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* parte de nosotros y lo de entrada */
 .nosotros{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -10,6 +11,22 @@
     width: 99vw;
     height: 200vh;
     background-color: #fff460;
+    border-bottom: 3px solid black;
+}
+.textopri{
+    grid-column: 6 / span 6 ;
+    grid-row: 3 ;
+    
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 25px;
+    width: 100%;
+    color: blue;
+    position: relative;
+    top: 29px ;
+    z-index: 1;
+
+
 }
 .esposa{
     position: relative;
@@ -74,12 +91,24 @@
     border-bottom: 2px solid black;
     display: grid;
 }
-
+a{
+    outline: none;
+    text-decoration: none;
+}
+a:link{
+    color: #000000;
+}
+a:visited {
+    color: #000000;
+}
 nav ol li{
     display: inline;
     list-style: none; /* oculta los puntos o numeros */
     margin: 80px;
     font-size: 25px;
+    color: #000000; 
+    
+    
     /* padding: 0px;    */
 }
 .menu{
@@ -127,6 +156,9 @@ nav ol li{
 .feliz{
     width: 100%;
     height: 100%;
+    will-change: transform;
+    animation:  30s linear infinite;
+    transform: will;
 }
 .estrella1{
     grid-column: 4;
@@ -162,12 +194,14 @@ nav ol li{
     position: relative;
     left: 60%;
 }
+
 .imgcirculos2{
     grid-column: 16;
     grid-row: 11;
     position: relative;
     left: 0%;
 }
+
 .imgcirculos3{
     grid-column: 1;
     grid-row: 16;
@@ -180,42 +214,237 @@ nav ol li{
     position: relative;
     left: 0%;
 }
+
 .cuadro1{
     border: 2px solid black;
     grid-row: 12 / span 4;
     grid-column: 3 / span 3;
     background-color:#ffb4ce;
-    transform: rotateZ(-10deg);
+    transform: rotateZ(-5deg);
     position: relative;
     top: -80px ;
     left: 50px;
+    width: 150%;
+    height: 120%;
+
 }
 .cuadro2{
     border: 2px solid black;
     grid-row: 12 / span 4;
     grid-column: 3 / span 3;
     background-color: #ffb4ce;
-    transform: rotateZ(-10deg);
+    transform: rotateZ(-5deg);
     position: relative;
     top: -105px ;
     left: 75px;
+    width: 150%;
+    height: 120%;
+
+
 }
 .cuadro3{
     border: 2px solid black;
     grid-row: 12 / span 4;
     grid-column: 3 / span 3;
     background-color: white;
-    transform: rotateZ(-10deg);
+    transform: rotateZ(-5deg);
     position: relative;
     top: -130px ;
     left: 100px;
+    width: 150%;
+    height: 120%;
+
 }
 .celebracion{
     width: 90%;
     height: 90%;
     object-fit: cover;
     position: relative;
-    left: 18px;
-    top: 25px;
+    left: 26px;
+    top: 28px;
     border: 4px solid black;
+}
+.texto1{
+    grid-column: 2 / span 2 ;
+    grid-row: 11;
+    position: relative;
+    top: 12px;
+    left: 11px;
+}
+.texto2{
+    grid-column: 13 / span 3;
+    grid-row: 11;
+    position: relative;
+    left: 20%;
+    top: 15px;
+}
+.texto3{
+    grid-column: 9 / span 4;
+    grid-row: 11 / span 2;
+    font-size: 120px ;
+    position: relative;
+    top: -20px;
+    color: blue;
+}
+.texto4{
+    grid-column: 9 / span 5;
+    grid-row: 13 / span 4;
+    font-size: 25px ;
+    position: relative;
+    top: 20px;
+}
+.texto5{
+    grid-column: 9 / span 5;
+    grid-row: 15 / span 4;
+    font-size: 25px ;
+    position: relative;
+    top: 20px;
+}
+.texto5_1{
+    grid-column: 9 / span 5;
+    grid-row: 15 / span 4;
+    font-size: 25px ;
+    position: relative;
+    top: 40px;
+}
+.anillos{
+    grid-column: 11 ;
+    grid-row: 15;
+}
+.anilloss{
+    width: 110%;
+    height: 110%;
+    position: relative;
+    top: -25px;
+}
+.estrella_ocho_puntas{
+    grid-column: 12;
+    grid-row: 15;
+}
+.ocho_puntas{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -25px;
+}
+/*  Parte de galeria  */
+.galeria{
+    border: 1px solid black;
+    background-color: rgb(175, 175, 175);
+    height: 180vh;
+    width:80% ;
+    margin-left:  auto;
+    margin-right:  auto;
+    display: grid;
+    grid-template-columns: repeat(15 ,1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+.parte_blanca{  
+    grid-column: 1 / 16;
+    grid-row: 1 / 9;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+.deslizar_derecha{
+    grid-column: 1 / span 15 ;
+    grid-row: 2 / span 3;
+    background-color: burlywood;
+    position: relative;
+    top: -55px;
+}
+.deslizar_izquierda{
+    background-color: burlywood;
+    grid-column: 1 / span 15;
+    grid-row: 6 / span 3;
+    position: relative;
+    top: -55px;
+}
+.Naranja{
+    grid-column: 1 / span 15;
+    grid-row: 6 / span 3;
+    background-color: #ff6541;
+}
+.texto6{
+    grid-column: 1 / span 6;
+    grid-row: 9 / span 2;
+    background-color: #ffb4ce;
+    border: 2px solid #000000;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+    
+}
+.texto7{
+    grid-column: 1 / span 6;
+    grid-row: 11 / span 2;
+    background-color: #ffb4ce;
+    border: 2px solid #000000;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto8{
+    grid-column: 7 / span 3;
+    grid-row: 9 / span 4;
+    background-color: #fff460;
+    border: 2px solid #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto9{
+    grid-column:10 / span 3 ;
+    grid-row: 9 / span 4;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto10{
+    grid-column: 13 / span 3;
+    grid-row: 9 / span 4;
+    background-color: blue;
+    border: 2px solid #000000;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto11{
+    grid-column: 1 / span 3;
+    grid-row: 13 / span 4;
+    background-color: #fff460;
+    border: 2px solid #000000;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto12{
+    grid-column: 4 / span 6;
+    grid-row: 13 / span 4;
+    background-color: #000000;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto13{
+    grid-column:10 / span 6 ;
+    grid-row: 13 / span 2;
+    background-color: #ff6541;
+    border:2px solid black;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
+}
+.texto14{
+    grid-column: 10 / span 6;
+    grid-row: 15 / span 2;
+    background-color: #ffb4ce;
+    border: 2px solid black;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing:  10px;
 }
