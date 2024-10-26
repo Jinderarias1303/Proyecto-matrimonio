@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Gulfs Display";
+    src: url('../fonts/gulfs/GulfsDisplay-Normal.woff2') format('woff2');
+    src: url('../fonts/gulfs/GulfsDisplay-Normal.woff') format('woff');
+    src: url('../fonts/gulfs/GulfsDisplay-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* parte de nosotros y lo de entrada */
 .nosotros{
     display: grid;
@@ -15,19 +23,19 @@
 }
 .textopri{
     grid-column: 6 / span 6 ;
-    grid-row: 3 ;
-    
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 25px;
+    grid-row: 3 / span 2 ;
+    /* border:  1px solid beige; */
+    font-family: Gulfs Display;
+    font-size: 6em;
+    text-align:center;
+    letter-spacing: 0px;
     width: 100%;
     color: blue;
     position: relative;
-    top: 29px ;
+    top: -160px;
     z-index: 1;
-
-
 }
+
 .esposa{
     position: relative;
     border: 2px solid #000000;
@@ -106,9 +114,9 @@ nav ol li{
     list-style: none; /* oculta los puntos o numeros */
     margin: 80px;
     font-size: 25px;
-    color: #000000; 
-    
-    
+    color: #000000;
+
+
     /* padding: 0px;    */
 }
 .menu{
@@ -117,7 +125,7 @@ nav ol li{
     justify-content: flex-end;
     grid-column:1/  7;
     top: 25px;
-    right: 53px;
+    left: 50px;
 
 }
 .icono1 {
@@ -281,10 +289,28 @@ nav ol li{
 .texto3{
     grid-column: 9 / span 4;
     grid-row: 11 / span 2;
-    font-size: 120px ;
+    font-size: 150px ;
     position: relative;
-    top: -20px;
-    color: blue;
+    top: -50px;
+    color: #fff460;
+    text-shadow: -2px -2px 0 blue,
+    2px -2px 0 blue,
+    -2px 2px 0 blue,
+    2px 2px 0 blue;
+    font-family: Gulfs Display;
+}
+.texto3_1{
+    grid-column: 9 / span 4;
+    grid-row: 11 / span 2;
+    font-size: 150px ;
+    position: relative;
+    top: 70px;
+    color: #fff460;
+    text-shadow: -2px -2px 0 blue,
+    2px -2px 0 blue,
+    -2px 2px 0 blue,
+    2px 2px 0 blue;
+    font-family: Gulfs Display;
 }
 .texto4{
     grid-column: 9 / span 5;
@@ -339,7 +365,7 @@ nav ol li{
     grid-template-columns: repeat(15 ,1fr);
     grid-template-rows: repeat(16, 1fr);
 }
-.parte_blanca{  
+.parte_blanca{
     grid-column: 1 / 16;
     grid-row: 1 / 9;
     background-color: #ffffff;
@@ -353,6 +379,89 @@ nav ol li{
     background-color: burlywood;
     position: relative;
     top: -55px;
+    overflow: hidden;
+    
+}
+.deslizar_derecha{
+    display: flex;
+    
+}
+.img1{
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 17%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    right: 80px;
+}
+.mujer_feliz{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img2{
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 17%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    
+    
+    
+}
+.mujer_con_ramo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img3{
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 27%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    left: -20px ;
+    margin-left: 50px;
+}
+.esposos_arbol{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img4{
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 17%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    margin-left: 50px;
+}
+.acantilado{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img5{
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 27%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    margin-left: 50px;
+}
+.beso_esposos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .deslizar_izquierda{
     background-color: burlywood;
@@ -374,7 +483,11 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
-    
+    color: #ff6541;
+}
+.p1{
+    display: flex;
+    justify-content: center;
 }
 .texto7{
     grid-column: 1 / span 6;
@@ -384,6 +497,7 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
+    color: blue ;
 }
 .texto8{
     grid-column: 7 / span 3;
@@ -393,6 +507,7 @@ nav ol li{
     font-size: 20px;
     text-align: center;
     letter-spacing:  10px;
+    color: #ff6541;
 }
 .texto9{
     grid-column:10 / span 3 ;
@@ -402,6 +517,7 @@ nav ol li{
     font-size: 20px;
     text-align: center;
     letter-spacing:  10px;
+    color: blue;
 }
 .texto10{
     grid-column: 13 / span 3;
@@ -411,6 +527,7 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
+    color: white;
 }
 .texto11{
     grid-column: 1 / span 3;
@@ -420,6 +537,7 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
+    color: blue;
 }
 .texto12{
     grid-column: 4 / span 6;
@@ -429,6 +547,7 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
+    color: white;
 }
 .texto13{
     grid-column:10 / span 6 ;
@@ -438,6 +557,7 @@ nav ol li{
     font-size: 50px;
     text-align: center;
     letter-spacing:  10px;
+    color: #ffb4ce;
 }
 .texto14{
     grid-column: 10 / span 6;
