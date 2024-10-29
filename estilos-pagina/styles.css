@@ -11,26 +11,26 @@
     font-weight: normal;
     font-style: normal;
 }
-.chat{
-    background: #fff460;
-    position: fixed;
-    top: 85%;
-    left: 90%;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
-    border: 2px solid black;
-    z-index: 2;
-    font-family: "Gulfs Display";
-}
-.P0{
-    position: relative;
-    left: 0.9vw;
-    top: 1.3vw;
-    font-size: 1.4vw;
-}
-@media(min-width:768px )and (max-width:3000px){
 
+@media(min-width:768px )and (max-width:3000px){
+    .chat{
+        background: #fff460;
+        position: fixed;
+        top: 85%;
+        left: 90%;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        z-index: 2;
+        font-family: "Gulfs Display";
+    }
+    .P0{
+        position: relative;
+        left: 0.9vw;
+        top: 1.3vw;
+        font-size: 1.4vw;
+    }
 /* parte de nosotros y lo de entrada */
 .nosotros{
     display: grid;
@@ -1146,6 +1146,24 @@ h3{
 }
 
 @media(max-width:768px){
+    .chat{
+        background: #fff460;
+        position: fixed;
+        top: 80%;
+        left: 85%;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        border: 2px solid black;
+        z-index: 2;
+        font-family: "Gulfs Display";
+    }
+    .P0{
+        position: relative;
+        left: 1.2vw;
+        top: 2.5vw;
+        font-size: 3vw;
+    }
     /* parte de nosotros y lo de entrada */
 .nosotros{
     display: grid;
@@ -2043,7 +2061,7 @@ right: -5vw;
     font-family:Gulfs Display;
     /* border: 1px solid black; */
     position: relative;
-    top: 150vw;
+    top: 73vw;
     left: 20vw;
 
 }
@@ -2054,7 +2072,7 @@ right: -5vw;
     /* border: 1px solid black; */
     align-items: center;
     position: relative;
-    top: 150vw;
+    top: 73vw;
     left: 20vw;
 }
 .fecha{
@@ -2064,11 +2082,11 @@ right: -5vw;
     font-family: Gulfs Display;
     position: relative;
     left: 20vw;
-    top: 170vw;
+    top: 76vw;
 }
 .barra3{
     position: relative;
-    top: 175vw;
+    top: 77vw;
     left: 20vw;
     height: 1vw;
     width: 65%;
@@ -2079,7 +2097,7 @@ right: -5vw;
     
     position: relative;
     left: 62.5vw;
-    top: 164vw;
+    top: 70vw;
     
 }
 .caja_flecha{
@@ -2089,12 +2107,188 @@ right: -5vw;
     border-radius: 50%;
     position: relative;
     left: 71.5vw;
-    top: 159.8vw;
+    top: 66vw;
 }
 .flchaderecha{
     position: relative;
-    left: 1.8vw;
-    top:0.8vw;
+    left: 1.5vw;
+    top:0.2vw;
+}
+.pareja_animada{
+    width: 40%;
+}
+.mesa_dj{
+    width:30%;
 }
 
+.img10{
+    
+    position: relative;
+    top:-40vw;
+    left: 25vw;
+    z-index: 1;
+}
+.img11{
+    
+    position: relative;
+    top: -93vw;
+    left: 12vw;
+}
+.img12{
+    
+    position: relative;
+    top: -120vw;
+    left: 42vw;
+}
+.yay{
+    width: 20%;
+}
+.img13{
+    
+    position: relative;
+    top: -106vw;
+    left: 13vw;
+}
+.coraxon{
+    width: 10%;
+}
+.img14{
+    
+    position: relative;
+    top: -126vw;
+    left: 60vw;
+}
+.estrellas{
+    width: 10%;
+}
+.img15{
+    position: relative;
+    top: -114vw;
+    left: 21vw;
+}
+.cuadro_rayo{
+    width: 10%;
+}
+.img16{
+    
+    position: relative;
+    top: -137vw;
+    left: 59vw;
+}
+
+.anillosss{
+    width: 10%;
+}
+.img17{
+    
+    position: relative;
+    top: -125vw;
+    left: 57vw;
+    z-index: 1;
+}
+.copas{
+    width: 15%;
+}
+.img18{
+    
+    position: relative;
+    top: -133vw;
+    left: 24vw;
+    z-index: 3;
+}
+.cara_feliz{
+    width: 10%;
+}
+.img19{
+    
+    position: relative;
+    top: -148vw;
+    left: 27vw;
+    z-index: 2;
+}
+.rayon_naranja{
+    width: 15%;
+}
+.img20{
+    
+    position: relative;
+    top: -175vw;
+    left: 57vw;
+    z-index: 1;
+}
+.m_azul_cielo{
+    width: 10%;
+}
+.img21{
+    
+    position: relative;
+        top: -211vw;
+        left: 56vw;
+}
+.disco_dj{
+    width: 10%;
+}
+.caja_redes{
+    position: relative;
+    top: 90vw;
+    left: 20vw;
+    background-color: #ffffff;
+    width: 65vw;
+    height: 18vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border: 2px solid #000000;
+}
+.texto16{
+    
+    font-family: Gulfs Display;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    position: relative;
+    top: 1.8vw;
+    left: 18%;
+    margin: 0.5vw;
+    font-size: 2vw;
+    text-decoration: underline;
+    
+}
+.texto17{
+    font-family: Gulfs Display;
+    grid-column: 1 ;
+    grid-row: 2;
+    width: 75%;
+    position: relative;
+    top: 2vw;
+    left: 15%;
+    font-size: 1.5vw;
+    margin: 0.5vw
+}
+.facebook{
+    background-color: #00b893;
+    border-radius: 50%;
+}
+.face{
+    position: relative;
+    left: 7vw;
+    top: 3vw;
+}
+.instagram{
+    background-color: #ffb4ce;
+    border-radius: 50%;
+}
+.inst{
+    position: relative;
+    left: 7vw;
+    top: 3vw;
+}
+.telegram{
+    background-color: #fff460;
+    border-radius: 50%;
+}
+.telegran{
+    position: relative;
+    left: 7vw;
+    top: 3vw;
+}
 }
